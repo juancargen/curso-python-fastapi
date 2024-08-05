@@ -1,0 +1,10 @@
+services:
+  movie-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - '5001:5001'
+      
